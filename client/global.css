@@ -1,5 +1,7 @@
 /** @import must precede all other statements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,8 +23,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 258 90% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 266 53% 35%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 220 14% 96%;
     --secondary-foreground: 222 47% 11%;
@@ -30,47 +32,54 @@
     --muted: 220 14% 96%;
     --muted-foreground: 215 20% 50%;
 
-    --accent: 200 95% 40%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 39 20% 59%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 258 90% 45%;
+    --ring: 266 53% 35%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 266 53% 35%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 0 0% 100%;
 
-    --sidebar-primary: 258 90% 60%;
+    --sidebar-primary: 266 53% 35%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 200 95% 40%;
+    --sidebar-accent: 39 20% 59%;
 
-    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-accent-foreground: 0 0% 100%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 266 53% 30%;
 
-    --sidebar-ring: 258 90% 45%;
+    --sidebar-ring: 39 20% 59%;
+
+    --husky-purple: 266 53% 35%;
+    --husky-gold: 39 20% 59%;
+    --husky-green: 104 83% 59%;
+    --husky-cyan: 177 83% 70%;
+    --husky-accent-purple: 269 84% 56%;
+    --husky-light-purple: 254 50% 73%;
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --background: 0 0% 0%;
     --foreground: 210 40% 98%;
 
-    --card: 224 71% 4%;
+    --card: 0 0% 0%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 224 71% 4%;
+    --popover: 0 0% 0%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 258 90% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 266 53% 35%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
@@ -78,23 +87,30 @@
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 200 95% 40%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 39 20% 59%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 258 90% 50%;
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 240 5% 96%;
-    --sidebar-primary: 258 90% 60%;
+    --ring: 266 53% 35%;
+    --sidebar-background: 266 53% 35%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 266 53% 35%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4% 16%;
     --sidebar-accent-foreground: 240 5% 96%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 258 90% 50%;
+    --sidebar-border: 266 53% 30%;
+    --sidebar-ring: 39 20% 59%;
+
+    --husky-purple: 266 53% 35%;
+    --husky-gold: 39 20% 59%;
+    --husky-green: 104 83% 59%;
+    --husky-cyan: 177 83% 70%;
+    --husky-accent-purple: 269 84% 56%;
+    --husky-light-purple: 254 50% 73%;
   }
 }
 
