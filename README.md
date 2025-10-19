@@ -1,45 +1,61 @@
-Fusion Starter — simplified instructions
 
-Minimal steps to run this project locally or on your own server.
+# 🎓 Husky Apply
 
-Prerequisites
+Tired of searching through endless job and scholarship listings?
+Husky Apply makes it way easier!
 
-- Node.js 18+ and pnpm installed
+Upload your résumé, get matched with on-campus jobs and scholarships**, and instantly autofill applications — all in one place.
 
-Development (hot-reload)
+In the future, we’ll even use AWS Bedrock to help you write essays and personal statements with smart AI suggestions. The app will also track how many applications you’ve submitted, how many interviews you got, and your progress over time — making the whole process smoother and less stressful. 🚀
 
-1. Install dependencies:
+---
 
+## ✨ What It Does
+
+* 📄 **Upload your résumé** → We read and understand it automatically
+* 🎯 **Smart matching** → Finds scholarships and jobs that fit you through web scraping
+* ⚡ **Autofill forms** → Saves you time when applying
+* ✍️ **Essay helper (coming soon)** → Uses AWS Bedrock for writing tips
+* 📊 **Progress tracking** → See your apps, interviews, and offers in one dashboard
+
+---
+
+## 🧰 You’ll Need
+
+* **Node.js 18+**
+* **pnpm** installed (you can get it from [pnpm.io](https://pnpm.io))
+
+---
+
+## 🧑‍💻 Run It Locally
+
+1. **Install dependencies**
+
+   ```bash
    pnpm install
+   ```
 
-2. Start dev server (Vite + Express middleware):
+2. **Start the dev server (hot reload enabled!)**
 
+   ```bash
    pnpm dev
+   ```
 
-3. Open the app in your browser:
+3. **Open your browser**
 
+   ```
    http://localhost:8080/
+   ```
 
-Production build and run (single server)
+That’s it — you should see the app running locally 🎉
 
-1. Build the client and server bundles:
+---
 
-   pnpm run build
+## 💡 Why We Built It
 
-   This builds the SPA to `dist/spa` and the server bundle to `dist/server/production.mjs`.
+Applying for jobs and scholarships takes **too much time** — rewriting the same info, hunting for deadlines, and juggling spreadsheets.
+Husky Apply cuts all that down to **minutes**, so students can focus on what matters: **getting opportunities**.
 
-2. Set environment variables (optional):
 
-   Copy `.env.example` to `.env` and edit values.
 
-3. Start the server:
 
-   pnpm run start:prod
-
-   The server will serve both static SPA files and the API on the configured `PORT` (default 3000 in code, but you can set `PORT` in `.env`).
-
-Notes
-
-- The repo uses pnpm and `pnpm-lock.yaml`. If you're using pnpm, you can safely remove `package-lock.json`.
-- Don't commit `.env` — use `.env.example` as a template.
-- If you want to persist scholarship form submissions, I can add an API endpoint and simple file or DB storage.
