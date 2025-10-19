@@ -4,7 +4,7 @@
 Tired of searching through endless job and scholarship listings?
 Husky Apply makes it way easier!
 
-Upload your résumé, get matched with on-campus jobs and scholarships**, and instantly autofill applications — all in one place.
+Upload your résumé, get matched with on-campus jobs and scholarships, and instantly autofill applications — all in one place.
 
 In the future, we’ll even use AWS Bedrock to help you write essays and personal statements with smart AI suggestions. The app will also track how many applications you’ve submitted, how many interviews you got, and your progress over time — making the whole process smoother and less stressful. 🚀
 
