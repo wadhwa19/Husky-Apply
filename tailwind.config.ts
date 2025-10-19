@@ -13,7 +13,19 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        kavoon: ["Kavoon", "cursive"],
+        encode: ["Encode Sans", "sans-serif"],
+      },
       colors: {
+        husky: {
+          purple: "hsl(var(--husky-purple))",
+          gold: "hsl(var(--husky-gold))",
+          green: "hsl(var(--husky-green))",
+          cyan: "hsl(var(--husky-cyan))",
+          "accent-purple": "hsl(var(--husky-accent-purple))",
+          "light-purple": "hsl(var(--husky-light-purple))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
