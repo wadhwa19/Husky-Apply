@@ -32,7 +32,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-black flex flex-col md:flex-row">
       <Sidebar />
-      
+
       <main className="flex-1 p-4 md:p-6 lg:p-8 overflow-x-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
           {stats.map((stat) => (
@@ -71,7 +71,9 @@ export default function Dashboard() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <h3 className="text-xl md:text-3xl font-kavoon text-center">Goals Achieved</h3>
+            <h3 className="text-xl md:text-3xl font-kavoon text-center">
+              Goals Achieved
+            </h3>
           </div>
 
           <div className="bg-transparent rounded-3xl overflow-hidden">
@@ -81,10 +83,18 @@ export default function Dashboard() {
               className="w-full h-auto object-contain rounded-3xl"
             />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mt-3 md:mt-4 text-center">
-              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">Vacancy Stats</span>
-              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">Applications Sent</span>
-              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">Interviews</span>
-              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">Rejected</span>
+              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">
+                Vacancy Stats
+              </span>
+              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">
+                Applications Sent
+              </span>
+              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">
+                Interviews
+              </span>
+              <span className="text-white text-sm md:text-base lg:text-xl font-kavoon">
+                Rejected
+              </span>
             </div>
           </div>
         </div>

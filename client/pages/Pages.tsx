@@ -11,7 +11,8 @@ export default function Pages() {
       <div className="max-w-3xl">
         <h1 className="text-4xl font-bold tracking-tight">Pages overview</h1>
         <p className="mt-3 text-muted-foreground">
-          Your template can have many pages. Create one React component per page and add a route for each. Start with two, then expand.
+          Your template can have many pages. Create one React component per page
+          and add a route for each. Start with two, then expand.
         </p>
       </div>
 
@@ -20,9 +21,15 @@ export default function Pages() {
         <div className="rounded-lg border p-4 bg-card text-card-foreground">
           <h2 className="font-semibold">Next steps</h2>
           <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-            <li>Create a file for each page in <code>client/pages/</code>.</li>
-            <li>Register routes in <code>client/App.tsx</code>.</li>
-            <li>Reuse the shared header/footer automatically via the layout.</li>
+            <li>
+              Create a file for each page in <code>client/pages/</code>.
+            </li>
+            <li>
+              Register routes in <code>client/App.tsx</code>.
+            </li>
+            <li>
+              Reuse the shared header/footer automatically via the layout.
+            </li>
           </ul>
         </div>
       </div>

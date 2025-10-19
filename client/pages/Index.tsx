@@ -42,15 +42,25 @@ export default function Index() {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div className="absolute -z-10 inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.accent/20),transparent_60%)]" aria-hidden />
+        <div
+          className="absolute -z-10 inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.accent/20),transparent_60%)]"
+          aria-hidden
+        />
         <div className="container py-20 md:py-28">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 text-xs text-muted-foreground">Guide</span>
+            <span className="inline-flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 text-xs text-muted-foreground">
+              Guide
+            </span>
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight">
-              Get JavaScript code for <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">all your pages</span>
+              Get JavaScript code for{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                all your pages
+              </span>
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Have multiple pages in your template? Create one React component per page, register routes, and you instantly have JS code for every page.
+              Have multiple pages in your template? Create one React component
+              per page, register routes, and you instantly have JS code for
+              every page.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg">
@@ -67,14 +77,23 @@ export default function Index() {
       <section id="how-it-works" className="container py-12 md:py-20">
         <div className="grid gap-10">
           <div className="grid gap-2">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">How to get JS for every page</h2>
-            <p className="text-muted-foreground">Three simple steps to structure a multi‑page template.</p>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+              How to get JS for every page
+            </h2>
+            <p className="text-muted-foreground">
+              Three simple steps to structure a multi‑page template.
+            </p>
           </div>
 
           <div className="grid gap-6">
             <div className="rounded-xl border p-6 bg-card text-card-foreground">
-              <h3 className="text-lg font-semibold">1) Create a component per page</h3>
-              <p className="mt-2 text-sm text-muted-foreground">Place each page in <code>client/pages/</code>. Use this template:</p>
+              <h3 className="text-lg font-semibold">
+                1) Create a component per page
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Place each page in <code>client/pages/</code>. Use this
+                template:
+              </p>
               <div className="mt-4">
                 <CodeBlock code={pageTemplate} language="tsx" />
               </div>
@@ -82,15 +101,21 @@ export default function Index() {
 
             <div className="rounded-xl border p-6 bg-card text-card-foreground">
               <h3 className="text-lg font-semibold">2) Register routes</h3>
-              <p className="mt-2 text-sm text-muted-foreground">Map URLs to your page components using React Router:</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Map URLs to your page components using React Router:
+              </p>
               <div className="mt-4">
                 <CodeBlock code={routesSnippet} language="tsx" />
               </div>
             </div>
 
             <div className="rounded-xl border p-6 bg-card text-card-foreground">
-              <h3 className="text-lg font-semibold">3) Export pages (optional)</h3>
-              <p className="mt-2 text-sm text-muted-foreground">Create a barrel file to easily import pages elsewhere:</p>
+              <h3 className="text-lg font-semibold">
+                3) Export pages (optional)
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Create a barrel file to easily import pages elsewhere:
+              </p>
               <div className="mt-4">
                 <CodeBlock code={barrelSnippet} language="ts" />
               </div>

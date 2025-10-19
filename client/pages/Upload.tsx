@@ -40,7 +40,7 @@ export default function Upload() {
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-kavoon text-white text-center mb-8 md:mb-16">
         Upload your Resume
       </h1>
-      
+
       <div
         className={`relative w-full max-w-md md:max-w-lg transition-all ${
           isDragging ? "scale-105" : ""

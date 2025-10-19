@@ -34,7 +34,7 @@ export default function Sidebar() {
         alt="Washington Huskies"
         className="w-20 h-14 md:w-24 md:h-16 object-contain mb-12 md:mb-16"
       />
-      
+
       <nav className="flex flex-row md:flex-col gap-4 md:gap-8 w-full px-2 justify-center md:justify-start">
         {navItems.map((item) => (
           <Link
@@ -42,7 +42,7 @@ export default function Sidebar() {
             to={item.path}
             className={cn(
               "flex flex-col md:flex-row items-center gap-1 md:gap-2 text-white hover:opacity-80 transition-opacity",
-              location.pathname === item.path && "opacity-100"
+              location.pathname === item.path && "opacity-100",
             )}
           >
             <img
