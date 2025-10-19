@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import parseRoutes from "./routes/parse";
 
 export function createServer() {
   const app = express();
@@ -18,6 +19,9 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+  // Resume parsing endpoint
+  app.post("/api/parse-resume", parseRoutes.parseResume, parseRoutes.handleParse);
+  app.post("/api/parse-text", parseRoutes.handleParseText);
 
   return app;
 }

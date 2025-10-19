@@ -1,4 +1,14 @@
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = useCallback(() => {
+    // Temporary mock login: navigate to dashboard
+    // Replace this with the real UW NetID OAuth flow when implemented
+    navigate("/dashboard");
+  }, [navigate]);
   return (
     <div className="min-h-screen bg-husky-purple flex flex-col items-center justify-center px-4 relative overflow-hidden">
       <div className="absolute top-8 left-4 md:left-12">
@@ -24,7 +34,10 @@ export default function Login() {
           Find Jobs and Scholarships!
         </p>
 
-        <button className="mt-8 md:mt-12 inline-flex items-center gap-3 md:gap-4 px-6 md:px-8 py-3 md:py-4 bg-husky-light-purple border-2 border-husky-gold rounded-lg hover:bg-opacity-90 transition-all">
+        <button
+          onClick={handleLogin}
+          className="mt-8 md:mt-12 inline-flex items-center gap-3 md:gap-4 px-6 md:px-8 py-3 md:py-4 bg-husky-light-purple border-2 border-husky-gold rounded-lg hover:bg-opacity-90 transition-all"
+        >
           <svg
             className="w-10 h-10 md:w-14 md:h-14 fill-[#85754D]"
             viewBox="0 0 60 53"

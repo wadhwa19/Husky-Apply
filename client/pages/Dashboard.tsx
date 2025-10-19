@@ -1,4 +1,6 @@
 import Sidebar from "@/components/dashboard/Sidebar";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const stats = [
   {
@@ -25,15 +27,21 @@ const jobCards = [
   "https://api.builder.io/api/v1/image/assets/TEMP/f0db36fb6979d9054c3a75727c917cbcd49cdf49?width=528",
   "https://api.builder.io/api/v1/image/assets/TEMP/e4caa8ef5480a3a0abeb100bda96e2e301ce67da?width=550",
   "https://api.builder.io/api/v1/image/assets/TEMP/d63b2600ae8bc28be81ad0745ae3bbdca0f0228f?width=508",
-  "https://api.builder.io/api/v1/image/assets/TEMP/2d939b44faf9e875442e5bc12f2149abc5b10efa?width=538",
+  // last image removed because it was visually cut off in the dashboard layout
 ];
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+
+  const openScholarship = useCallback(() => {
+    navigate("/scholarship");
+  }, [navigate]);
+
   return (
     <div className="min-h-screen bg-black flex flex-col md:flex-row">
       <Sidebar />
 
-      <main className="flex-1 p-4 md:p-6 lg:p-8 overflow-x-hidden">
+      <main className="flex-1 p-4 md:p-6 lg:p-8 overflow-x-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
           {stats.map((stat) => (
             <div
@@ -108,6 +116,7 @@ export default function Dashboard() {
               <div
                 key={index}
                 className="rounded-3xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+                onClick={index === 0 ? openScholarship : undefined}
               >
                 <img
                   src={card}
